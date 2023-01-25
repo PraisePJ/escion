@@ -1,0 +1,207 @@
+
+{% include 'nav.html' %}
+{% load static %}
+{% block body %}
+<style media="screen">
+body{
+  background-color: #e6f0ff;
+  margin: none
+}
+#submenu{
+  color: #333333;
+}
+#submenu:hover{
+  color: #4169e1;
+}
+#link{
+  text-decoration: none;
+  padding-top: 20px;
+}
+</style>
+<!-- Slideshow container -->
+<body>
+  <div class="d-block pt-sm-5" style="font-family: helvetica; padding-top: 75px;">
+    <div class="" style="width: 100%;">
+      <img src="{% static 'images/c_one.png' %}" style="width: 100%;">
+    </div>
+  </div>
+  <!--Health Care, Books, Watches Categories Section-->
+  <div class="container-fluid mt-5" style="width: 100%; background-color: #">
+    <div class="d-flex"style="padding-left: 5%; width: 100%;">
+      <div class="card mt-2 me-2 mb-2" style="width: 30%;">
+        <div class="card-body">
+          <div class="card-title">
+            <h5>Health Care</h5>
+          </div>
+          <div class="card-img">
+            <img src="{% static 'images/1 (35).jpg' %}" alt="" style="width: 100%; height: 200px">
+          </div>
+          <a id="link" href="{% url 'health-care' %}">Shop now</a>
+        </div>
+      </div>
+      <div class="card m-2" style="width: 30%;">
+        <div class="card-body">
+          <div class="card-title">
+            <h5>Books</h5>
+          </div>
+          <div class="card-img">
+            <img src="{% static 'images/1 (52).jpg' %}" alt="" style="width: 100%; height: 200px">
+          </div>
+          <a id="link" href="{% url 'books' %}">Shop now</a>
+        </div>
+      </div>
+      <div class="card mt-2 ms-2 mb-2" style="width: 30%;">
+        <div class="card-body">
+          <div class="card-title">
+            <h5>Watches</h5>
+          </div>
+          <div class="card-img">
+            <img src="{% static 'images/1 (64).jpg' %}" alt="" style="width: 100%; height: 200px">
+          </div>
+          <a id="link" href="{% url 'watches' %}">Shop now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Popular Topics Section-->
+  <div class="container-fluid mt-5" style="height: 200px; background-color: #ffffff">
+    <h5 class="p-2">Popular topics</h5>
+    <div class=" d-flex">
+      <div class="" style="width: 20%;">
+        <img src="{% static 'images/1 (50).jpg' %}" alt="" height="100px">
+      </div>
+      <div class="" style="width: 20%;">
+        <img src="{% static 'images/1 (53).jpg' %}" alt="" height="100px">
+      </div>
+      <div class="" style="width: 20%;">
+        <img src="{% static 'images/1 (56).jpg' %}" alt="" height="100px">
+      </div>
+      <div class="" style="width: 20%;">
+        <img src="{% static 'images/1 (61).jpg' %}" alt="" height="100px">
+      </div>
+      <div class="" style="width: 20%;">
+        <img src="{% static 'images/1 (60).jpg' %}" alt="" height="100px">
+      </div>
+    </div>
+  </div>
+  <!--Laptops, Phones, Shoes Categories Section-->
+  <div class="container-fluid mt-5" style="width: 100%; background-color: #">
+    <div class="d-flex"style="padding-left: 5%; width: 100%;">
+      <div class="card mt-2 me-2 mb-2" style="width: 30%;">
+        <div class="card-body">
+          <div class="card-title">
+            <h5>Laptops</h5>
+          </div>
+          <div class="card-img">
+            <img src="{% static 'images/IMG_20221231_175408.jpg' %}" alt="" style="width: 100%; height: 150px">
+          </div>
+          <a id="link" href="laptops">Shop now</a>
+        </div>
+      </div>
+      <div class="card m-2" style="width: 30%;">
+        <div class="card-body">
+          <div class="card-title">
+            <h5>Phones</h5>
+          </div>
+          <div class="card-img">
+            <img src="{% static 'images/1 (6).jpg' %}" alt="" style="width: 100%; height: 150px">
+          </div>
+          <a id="link" href="{% url 'phones' %}">Shop now</a>
+        </div>
+      </div>
+      <div class="card mt-2 ms-2 mb-2" style="width: 30%;">
+        <div class="card-body">
+          <div class="card-title">
+            <h5>Shoes</h5>
+          </div>
+          <div class="card-img">
+            <img src="{% static 'images/IMG_20221231_172321.jpg' %}" alt="" style="width: 100%; height: 150px">
+          </div>
+          <a id="link" href="{% url 'shoes' %}">Shop now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Popular Picks Section-->
+  <div class="container-fluid mt-5" style="height: 200px; background-color: #ffffff">
+    <h5 class="p-2">Popular picks</h5>
+    <div class=" d-flex">
+      <div class="" style="width: 20%;">
+        <img src="{% static 'images/1 (27).jpg' %}" alt="" height="100px">
+      </div>
+      <div class="" style="width: 20%;">
+        <img src="{% static 'images/1 (28).jpg' %}" alt="" height="100px">
+      </div>
+      <div class="" style="width: 20%;">
+        <img src="{% static 'images/1 (29).jpg' %}" alt="" height="100px">
+      </div>
+      <div class="" style="width: 20%;">
+        <img src="{% static 'images/1 (31).jpg' %}" alt="" height="100px">
+      </div>
+      <div class="" style="width: 20%;">
+        <img src="{% static 'images/1 (34).jpg' %}" alt="" height="100px">
+      </div>
+    </div>
+  </div>
+  <!--Clothes, Hair Grooming, Cosmetics Categories Section-->
+  <div class="container-fluid mt-5" style="width: 100%; background-color: #">
+    <div class="d-flex"style="padding-left: 5%; width: 100%;">
+      <div class="card mt-2 me-2 mb-2" style="width: 30%;">
+        <div class="card-body">
+          <div class="card-title">
+            <h5>Clothes</h5>
+          </div>
+          <div class="card-img">
+            <img src="{% static 'images/1 (70).jpg' %}" alt="" style="width: 100%; height: 200px">
+          </div>
+          <a id="link" href="{% url 'clothes' %}">Shop now</a>
+        </div>
+      </div>
+      <div class="card m-2" style="width: 30%;">
+        <div class="card-body">
+          <div class="card-title">
+            <h5>Hair Grooming</h5>
+          </div>
+          <div class="card-img">
+            <img src="{% static 'images/1 (43).jpg' %}" alt="" style="width: 100%; height: 200px">
+          </div>
+          <a id="link" href="{% url 'hair-grooming' %}">Shop now</a>
+        </div>
+      </div>
+      <div class="card mt-2 ms-2 mb-2" style="width: 30%;">
+        <div class="card-body">
+          <div class="card-title">
+            <h5>Cosmetics</h5>
+          </div>
+          <div class="card-img">
+            <img src="{% static 'images/1 (46).jpg' %}" alt="" style="width: 100%; height: 200px">
+          </div>
+          <a id="link" href="{% url 'cosmetics' %}">Shop now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Popular Picks Section-->
+  <div class="container-fluid mt-5 mb-5" style="height: 200px; background-color: #ffffff">
+    <h5 class="p-2">Popular among customers</h5>
+    <div class=" d-flex">
+      <div class="" style="width: 20%;">
+        <img src="{% static 'images/1 (1).jpg' %}" alt="" height="100px">
+      </div>
+      <div class="" style="width: 20%;">
+        <img src="{% static 'images/1 (2).jpg' %}" alt="" height="100px">
+      </div>
+      <div class="" style="width: 20%;">
+        <img src="{% static 'images/1 (19).jpg' %}" alt="" height="100px">
+      </div>
+      <div class="" style="width: 20%;">
+        <img src="{% static 'images/1 (7).jpg' %}" alt="" height="100px">
+      </div>
+      <div class="" style="width: 20%;">
+        <img src="{% static 'images/1 (16).jpg' %}" alt="" height="100px">
+      </div>
+    </div>
+  </div>
+</body>
+{% endblock %}
+{% include 'footer.html' %}
